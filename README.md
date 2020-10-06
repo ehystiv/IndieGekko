@@ -1,20 +1,6 @@
-# gekko
+# gekko.it 🦎
 
-## Build Setup
+gekko.it is a website for gecko's online selling.
 
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Technical information
+Made with [Nuxt](www.nuxtjs.org) framework, on a PHP server.
