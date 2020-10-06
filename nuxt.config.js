@@ -59,7 +59,7 @@ export default {
         light: {
           primary: colors.orange,
           accent: colors.orange.darken4,
-          secondary: colors.black,
+          secondary: colors.grey.darken4,
           info: colors.cyan.accent1,
           warning: colors.yellow.lighten1,
           error: colors.orange.darken4,
