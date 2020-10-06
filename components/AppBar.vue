@@ -3,7 +3,7 @@
     <v-app-bar color="primary" flat elevate-on-scroll fixed app>
       <v-app-bar-nav-icon
         @click="drawer = true"
-        class="d-lg-none d-xl-flex"
+        class="d-lg-none d-xl-none"
       ></v-app-bar-nav-icon>
       <v-spacer class="d-lg-none d-xl-flex" />
       <v-toolbar-title v-text="title" class="title" />
@@ -23,7 +23,7 @@
         {{ button.title }}
       </v-btn>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" app dark>
+    <v-navigation-drawer v-model="drawer" app dark disable-resize-watcher>
       <v-list nav dense>
         <v-list-item>
           <v-list-item-content>
