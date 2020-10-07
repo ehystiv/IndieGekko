@@ -5,7 +5,7 @@
         @click="drawer = true"
         class="d-lg-none d-xl-none"
       ></v-app-bar-nav-icon>
-      <v-spacer class="d-lg-none d-xl-flex" />
+      <v-spacer class="d-lg-none d-xl-none" />
       <v-toolbar-title v-text="title" class="title" />
       <v-spacer />
       <v-btn
@@ -13,7 +13,6 @@
         text
         tile
         nuxt
-        ripple="{ class: white--text }"
         v-for="button in buttons"
         :key="button.name"
         :to="button.to"
