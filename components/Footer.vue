@@ -27,22 +27,37 @@ export default {
       social: [
         {
           icon: 'fab fa-instagram',
-          href: 'http://instagram.com',
+          href: '',
         },
         {
           icon: 'fab fa-facebook',
-          href: 'http://facebook.com',
+          href: '',
         },
         {
           icon: 'fas fa-envelope',
-          href: 'mailto:mail@sample.com',
+          href: '',
         },
         {
           icon: 'fas fa-phone',
-          href: 'tel:1234567894',
+          href: '',
         },
       ],
     }
+  },
+
+  methods: {
+    async getContact() {
+      let contatti = await this.$axios.$get('/data/contatti.json')
+
+      this.social[0].href = contatti.instagram
+      this.social[1].href = contatti.facebook
+      this.social[2].href = 'mailto:' + contatti.email
+      this.social[3].href = 'tel:' + contatti.telefono
+    },
+  },
+
+  mounted() {
+    this.getContact()
   },
 }
 </script>
