@@ -44,7 +44,12 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: 'http://localhost:3000/api',
+    retry: {
+      retries: 3,
+    },
+  },
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
   content: {},
