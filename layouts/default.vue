@@ -2,7 +2,9 @@
   <v-app>
     <AppBar />
     <v-main class="bg">
-      <nuxt />
+      <v-container fluid>
+        <nuxt />
+      </v-container>
     </v-main>
     <Footer />
   </v-app>
