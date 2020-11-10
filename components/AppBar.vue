@@ -1,26 +1,27 @@
 <template>
   <div id="appbar">
-    <v-app-bar color="primary" flat elevate-on-scroll fixed app>
+    <v-app-bar color="primary" dense elevate-on-scroll fixed app>
       <v-app-bar-nav-icon
         @click="drawer = true"
-        class="d-lg-none d-xl-none"
+        v-if="$vuetify.breakpoint.mobile"
       ></v-app-bar-nav-icon>
-      <v-spacer class="d-lg-none d-xl-none" />
+      <v-spacer v-if="$vuetify.breakpoint.mobile" />
       <v-toolbar-title v-text="title" class="title" />
       <v-spacer />
-      <v-btn
-        color="secondary"
-        text
-        tile
-        nuxt
-        v-for="button in buttons"
-        :key="button.name"
-        :to="button.to"
-        class="d-none d-lg-flex d-xl-flex"
-      >
-        <v-icon left>{{ button.icon }}</v-icon>
-        {{ button.title }}
-      </v-btn>
+      <span v-if="!$vuetify.breakpoint.mobile">
+        <v-btn
+          color="secondary"
+          text
+          tile
+          nuxt
+          v-for="button in buttons"
+          :key="button.name"
+          :to="button.to"
+        >
+          <v-icon left>{{ button.icon }}</v-icon>
+          {{ button.title }}
+        </v-btn>
+      </span>
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" app dark disable-resize-watcher>
       <v-list nav dense>

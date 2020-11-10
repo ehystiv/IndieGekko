@@ -1,5 +1,5 @@
 <template>
-  <v-footer app dark shaped absolute>
+  <v-footer app dark absolute rounded="lg">
     <v-row justify="center" align="center" no-gutters>
       Contattaci:
       <v-btn
