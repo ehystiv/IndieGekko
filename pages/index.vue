@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center" align="start">
     <v-col cols="12" sm="12" md="10" lg="10">
-      <v-card class="mt-10" elevation="10">
+      <v-card elevation="10">
         <v-carousel
           v-model="carousel"
           cycle

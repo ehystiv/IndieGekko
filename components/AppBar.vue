@@ -64,7 +64,7 @@ export default {
 
   data() {
     return {
-      title: 'Gekko',
+      title: 'IndieGekko',
       drawer: false,
       buttons: [
         {
@@ -73,7 +73,7 @@ export default {
           to: '/',
         },
         {
-          title: 'schede tecniche',
+          title: 'schede allevamento',
           icon: 'fas fa-file-alt',
           to: 'schede',
         },
@@ -86,6 +86,11 @@ export default {
           title: 'disponibili',
           icon: 'fas fa-check-square',
           to: 'disponibili',
+        },
+        {
+          title: 'prenota',
+          icon: 'fas fa-check-square',
+          to: 'prenota',
         },
       ],
     }
