@@ -11,9 +11,9 @@
           :height="customHeight"
         >
           <v-carousel-item
-            v-for="i in n_photos"
-            :key="i"
-            :src="`https://picsum.photos/700/500?image=${i}`"
+            v-for="photo in photos"
+            :key="photo"
+            :src="`/nascite/${photo}`"
           ></v-carousel-item>
         </v-carousel>
         <v-list two-line>
@@ -105,10 +105,14 @@
 export default {
   components: {},
 
+  async asyncData({ $axios }) {
+    const photos = await $axios.$get('/api/getNascite.php')
+    return { photos }
+  },
+
   data() {
     return {
       carousel: 0,
-      n_photos: 6,
     }
   },
 
@@ -143,10 +147,6 @@ export default {
 <style>
 .gradient {
   background: rgba(0, 0, 0, 1);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 152, 0, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #ff5a0a 100%);
 }
 </style>
