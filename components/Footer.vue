@@ -23,7 +23,7 @@ export default {
 
   data() {
     return {
-      title: 'Gekko',
+      title: 'IndieGekko',
       social: [
         {
           icon: 'fab fa-instagram',

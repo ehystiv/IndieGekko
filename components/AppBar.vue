@@ -5,12 +5,17 @@
         @click="drawer = true"
         v-if="$vuetify.breakpoint.mobile"
       ></v-app-bar-nav-icon>
+      <img
+        v-if="!$vuetify.breakpoint.mobile"
+        src="/logos/logo_testa.png"
+        height="100%"
+        alt="logo"
+      />
       <v-spacer v-if="$vuetify.breakpoint.mobile" />
       <v-toolbar-title v-text="title" class="title" />
       <v-spacer />
       <span v-if="!$vuetify.breakpoint.mobile">
         <v-btn
-          color="secondary"
           text
           tile
           nuxt
@@ -22,17 +27,16 @@
           {{ button.title }}
         </v-btn>
       </span>
+      <img
+        v-if="$vuetify.breakpoint.mobile"
+        src="/logos/logo_testa.png"
+        height="100%"
+        alt="logo"
+      />
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" app dark disable-resize-watcher>
+      <v-img src="/logos/logo_full.png" />
       <v-list nav dense>
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title class="title"> Gekko </v-list-item-title>
-            <v-list-item-subtitle>
-              Allevamento e vendita Gechi
-            </v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
         <v-list-item
           nuxt
           v-for="button in buttons"
@@ -40,13 +44,26 @@
           :to="button.to"
         >
           <v-list-item-icon>
-            <v-icon>{{ button.icon }}</v-icon>
+            <v-icon color="primary">{{ button.icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{
             button.title.toUpperCase()
           }}</v-list-item-title>
         </v-list-item>
       </v-list>
+      <template v-slot:append>
+        <div class="ml-15 mb-2">
+          <v-btn
+            icon
+            color="primary"
+            v-for="button in social"
+            :key="button.icon"
+            :href="button.href"
+          >
+            <v-icon> {{ button.icon }} </v-icon>
+          </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
   </div>
 </template>
@@ -66,6 +83,7 @@ export default {
     return {
       title: 'IndieGekko',
       drawer: false,
+
       buttons: [
         {
           title: 'home',
@@ -89,8 +107,27 @@ export default {
         },
         {
           title: 'prenota',
-          icon: 'fas fa-check-square',
+          icon: 'far fa-edit',
           to: 'prenota',
+        },
+      ],
+
+      social: [
+        {
+          icon: 'fab fa-instagram',
+          href: '',
+        },
+        {
+          icon: 'fab fa-facebook',
+          href: '',
+        },
+        {
+          icon: 'fas fa-envelope',
+          href: '',
+        },
+        {
+          icon: 'fas fa-phone',
+          href: '',
         },
       ],
     }
