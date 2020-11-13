@@ -1,4 +1,4 @@
-# gekko.it 🦎
+# IndieGekko.it 🦎
 
 gekko.it is a website for gecko's online selling.
 
