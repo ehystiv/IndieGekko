@@ -11,7 +11,7 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - Gekko.it',
+    titleTemplate: '%s - IndieGekko',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -39,22 +39,22 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/content
-    '@nuxt/content',
     // https://www.npmjs.com/package/@nuxtjs/toast
     '@nuxtjs/toast',
+    // https://www.npmjs.com/package/@nuxtjs/robots
+    '@nuxtjs/robots',
+    // https://www.npmjs.com/package/@nuxtjs/sitemap
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'http://localhost:3000/api',
+    baseURL:
+      process.env.NODE_ENV === 'production' ? '/' : 'http://localhost:3000',
     retry: {
       retries: 3,
     },
   },
-
-  // Content module configuration (https://go.nuxtjs.dev/content-config)
-  content: {},
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
@@ -64,7 +64,7 @@ export default {
       dark: false,
       themes: {
         light: {
-          primary: colors.orange,
+          primary: '#FF5A0A',
           accent: colors.orange.darken4,
           secondary: colors.grey.darken4,
           info: colors.cyan.accent1,
@@ -80,6 +80,18 @@ export default {
     position: 'bottom-center',
     duration: 3000,
     className: 'toast',
+  },
+
+  robots: [
+    {
+      UserAgent: '*',
+      Allow: '/',
+    },
+  ],
+
+  sitemap: {
+    hostname: 'https://www.indiegekko.it',
+    gzip: true,
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
