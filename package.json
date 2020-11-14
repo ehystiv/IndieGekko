@@ -13,11 +13,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/recaptcha": "^0.6.2",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "@nuxtjs/toast": "^3.3.1",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.5"
+    "nuxt": "^2.14.5",
+    "querystring": "^0.2.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
