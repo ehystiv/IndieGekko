@@ -41,6 +41,8 @@ export default {
     '@nuxtjs/axios',
     // https://www.npmjs.com/package/@nuxtjs/toast
     '@nuxtjs/toast',
+    // https://github.com/nuxt-community/recaptcha-module
+    '@nuxtjs/recaptcha',
     // https://www.npmjs.com/package/@nuxtjs/robots
     '@nuxtjs/robots',
     // https://www.npmjs.com/package/@nuxtjs/sitemap
@@ -78,8 +80,15 @@ export default {
 
   toast: {
     position: 'bottom-center',
-    duration: 3000,
+    duration: 5000,
     className: 'toast',
+  },
+
+  recaptcha: {
+    hideBadge: false, // Hide badge element (v3 & v2 via size=invisible)
+    siteKey: process.env.CAPTCHA_ID, // Site key for requests
+    version: 2, // Version
+    size: 'normal', // Size: 'compact', 'normal', 'invisible' (v2)
   },
 
   robots: [
