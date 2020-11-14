@@ -4,7 +4,7 @@
       <v-card rounded="lg" elevation="12">
         <v-card-title>Prenota un esemplare disponibile</v-card-title>
         <v-container flui>
-          <v-form ref="form">
+          <v-form ref="form" @submit.prevent="onSubmit()">
             <v-row align="start" justify="center">
               <v-col cols="8">
                 <v-text-field
@@ -44,6 +44,12 @@
                   :disabled="disabled"
                 ></v-select>
               </v-col>
+              <v-col cols="8">
+                <recaptcha
+                  @error="onError"
+                  @success="onSuccess"
+                  @expired="onExpired"
+              /></v-col>
             </v-row>
           </v-form>
         </v-container>
@@ -61,6 +67,8 @@
 </template>
 
 <script>
+import * as qs from 'querystring'
+
 export default {
   data() {
     return {
@@ -76,30 +84,65 @@ export default {
         cognome: '',
         email: '',
         geco: '',
+        token: '',
       },
     }
   },
 
   methods: {
-    bookIt() {
+    async bookIt() {
       if (this.$refs.form.validate()) {
         this.disabled = true
+        this.prenotazione.token = await this.$recaptcha.getResponse()
+
         this.$axios
-          .$post('/prenota.php', this.prenotazione)
+          .$post('/api/prenota.php', qs.stringify(this.prenotazione), {
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+          })
           .then((res) => {
-            console.log(res)
-            if (res === 'success') {
+            if (res.status === 'success') {
               this.disabled = false
-            } else {
+              this.$toast.success(
+                'Prenotazione avvenuta con successo! Riceverai un email di risposta a breve'
+              )
+              this.$refs.fomr.reset()
+            } else if (res.status === 'failed') {
+              console.error(res.error)
               this.$toast.error(
-                'Impossibile completare ora, riprova più tardi.'
+                'Impossibile completare la richiesta ora, riprova più tardi.'
               )
               this.disabled = false
             }
+
+            this.$recaptcha.reset()
           })
           .catch((err) => console.error(err))
       }
     },
+
+    async onSubmit() {
+      console.log('submitted')
+    },
+
+    onSuccess(token) {
+      this.prenotazione.token = token
+    },
+
+    onError(error) {
+      console.log('Error happened:', error)
+    },
+
+    onExpired() {
+      console.log('Token Expired')
+    },
+  },
+
+  head() {
+    return {
+      title: 'Prenota',
+    }
   },
 }
 </script>
