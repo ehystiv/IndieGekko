@@ -13,7 +13,7 @@
           <v-carousel-item
             v-for="photo in photos"
             :key="photo"
-            :src="`/nascite/${photo}`"
+            :src="`/immagini/nascite/${photo}`"
           ></v-carousel-item>
         </v-carousel>
         <v-list two-line>
@@ -144,9 +144,4 @@ export default {
 }
 </script>
 
-<style>
-.gradient {
-  background: rgba(0, 0, 0, 1);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #ff5a0a 100%);
-}
-</style>
+<style></style>
