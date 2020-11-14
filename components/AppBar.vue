@@ -53,15 +53,7 @@
       </v-list>
       <template v-slot:append>
         <div class="ml-15 mb-2">
-          <v-btn
-            icon
-            color="primary"
-            v-for="button in social"
-            :key="button.icon"
-            :href="button.href"
-          >
-            <v-icon> {{ button.icon }} </v-icon>
-          </v-btn>
+          <SocialIcon orange />
         </div>
       </template>
     </v-navigation-drawer>
@@ -76,8 +68,14 @@
 </style>
 
 <script>
+import SocialIcon from '~/components/SocialIcon'
+
 export default {
   name: 'AppBar',
+
+  components: {
+    SocialIcon,
+  },
 
   data() {
     return {
