@@ -25,6 +25,14 @@
  * @deprecated File deprecated in Release 2.0.0
  */
 
+require_once __DIR__.'/../vendor/autoload.php';
+
+$Loader = new josegonzalez\Dotenv\Loader(__DIR__."/../.env");
+$Loader->parse();
+$Loader->toEnv();
+
+$recaptcha = new \ReCaptcha\ReCaptcha($_ENV['CAPTCHA_SECRET']);
+
 $response = new stdClass();
 $response->status = "";
 $response->error = "";
@@ -42,19 +50,10 @@ if (!empty($_POST)) {
         $response->error = "no data";
         echo json_encode($response);
     } else {
-        $secret = "6LcG1OIZAAAAAHkTZtzRzYtIDOQhKCCA29IOXIp9";
 
-        $url = "https://www.google.com/recaptcha/api/siteverify?secret="
-                .$secret
-                ."&response="
-                .$token
-                ."&remoteip="
-                .$_SERVER['REMOTE_ADDR'];
+        $g_response = $recaptcha->verify($token, $_SERVER['REMOTE_ADDR']);
 
-        $g_response = file_get_contents($url);
-        $responseJson = json_decode($g_response);
-
-        if ($responseJson->success === true) {
+        if ($g_response->isSuccess()) {
             $to      = "info@indiegekko.it";
             $subject = "Nuova prenotazione";
             $message = 'Prenotato '.$geco." da ".$nome." ".$cognome." (".$email.")";

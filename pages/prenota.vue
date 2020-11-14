@@ -102,6 +102,7 @@ export default {
             },
           })
           .then((res) => {
+            console.log(res)
             if (res.status === 'success') {
               this.disabled = false
               this.$toast.success(

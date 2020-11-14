@@ -25,7 +25,7 @@
  * @deprecated File deprecated in Release 2.0.0
  */
 
-$photos = scandir("../nascite/");
+$photos = scandir("../immagini/nascite/");
 
 $resultFiles = array();
 

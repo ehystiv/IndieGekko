@@ -1,0 +1,17 @@
+{
+  "name": "stivb/indiegekko",
+  "type": "project",
+  "require": {
+    "google/recaptcha": "^1.2",
+    "josegonzalez/dotenv": "^3.2"
+  },
+  "config": {
+    "vendor-dir": "./static/vendor"
+  },
+  "authors": [
+    {
+      "name": "StefanoBichicchi",
+      "email": "bichicchi.stefano@gmail.com"
+    }
+  ]
+}
