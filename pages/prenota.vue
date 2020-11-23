@@ -71,7 +71,15 @@
         </v-card-actions>
       </v-card>
     </v-col>
-    <v-col cols="10">
+    <v-col cols="12" sm="12" md="10" lg="8" xl="6">
+      <v-banner
+        class="negative-gradient white--text text-center"
+        elevation="10"
+        rounded="lg"
+        >CONSIGLI D'ACQUISTO</v-banner
+      >
+    </v-col>
+    <v-col cols="12" sm="12" md="10" lg="8" xl="6">
       <ShopAmazon :links="links" />
     </v-col>
   </v-row>

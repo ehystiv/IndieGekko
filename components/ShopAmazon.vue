@@ -1,7 +1,6 @@
 <template>
   <v-card rounded="lg" elevation="12" v-if="links && links.length > 0">
-    <v-card-title>Consigli d'acquisto</v-card-title>
-    <v-row align="start" justify="center">
+    <v-row align="start" justify="start" class="px-3">
       <v-col cols="2" v-for="link in links" :key="link">
         <iframe
           title="shop"
