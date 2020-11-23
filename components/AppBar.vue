@@ -91,22 +91,22 @@ export default {
         {
           title: 'schede allevamento',
           icon: 'fas fa-file-alt',
-          to: 'schede',
+          to: '/schede',
         },
         {
           title: 'Riproduttori',
           icon: 'fas fa-venus-mars',
-          to: 'riproduttori',
+          to: '/riproduttori',
         },
         {
           title: 'disponibili',
           icon: 'fas fa-check-square',
-          to: 'disponibili',
+          to: '/disponibili',
         },
         {
           title: 'prenota',
           icon: 'far fa-edit',
-          to: 'prenota',
+          to: '/prenota',
         },
       ],
 

@@ -23,16 +23,20 @@
             <v-card-title>{{ scheda.tipo }}</v-card-title>
             <v-card-text>
               <p>
+                <span class="title">Origini</span> <br />
+                <span class="body-2" v-html="scheda.origini"></span>
+              </p>
+              <p>
+                <span class="title">Descrizione fisica</span> <br />
+                <span class="body-2" v-html="scheda.descrizione_fisica"></span>
+              </p>
+              <p>
                 <span class="title">Terrario</span> <br />
                 <span class="body-2" v-html="scheda.terrario"></span>
               </p>
               <p>
                 <span class="title">Alimentazione</span> <br />
                 <span class="body-2" v-html="scheda.alimentazione"></span>
-              </p>
-              <p>
-                <span class="title">Riproduzione</span> <br />
-                <span class="body-2" v-html="scheda.riproduzione"></span>
               </p>
             </v-card-text>
           </v-card>

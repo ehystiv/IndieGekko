@@ -1,12 +1,19 @@
 <template>
   <v-row align="start" justify="center">
+    <v-col cols="12">
+      <v-banner
+        class="gradient white--text text-center"
+        elevation="10"
+        rounded="lg"
+        >PRENOTA UN ESEMPLARE</v-banner
+      >
+    </v-col>
     <v-col cols="12" sm="12" md="10" lg="8" xl="6">
       <v-card rounded="lg" elevation="12">
-        <v-card-title>Prenota un esemplare disponibile</v-card-title>
-        <v-container flui>
+        <v-container>
           <v-form ref="form" @submit.prevent="onSubmit()">
             <v-row align="start" justify="center">
-              <v-col cols="8">
+              <v-col cols="4">
                 <v-text-field
                   v-model="prenotazione.nome"
                   label="Nome"
@@ -15,7 +22,7 @@
                   :disabled="disabled"
                 ></v-text-field>
               </v-col>
-              <v-col cols="8">
+              <v-col cols="4">
                 <v-text-field
                   v-model="prenotazione.cognome"
                   label="Cognome"
@@ -41,6 +48,7 @@
                   label="Seleziona geco"
                   :rules="[rules.required]"
                   ref="geco"
+                  no-data-text="Nessun esemplare disponibile"
                   :disabled="disabled"
                 ></v-select>
               </v-col>
@@ -63,6 +71,9 @@
         </v-card-actions>
       </v-card>
     </v-col>
+    <v-col cols="10">
+      <ShopAmazon :links="links" />
+    </v-col>
   </v-row>
 </template>
 
@@ -72,7 +83,6 @@ import * as qs from 'querystring'
 export default {
   data() {
     return {
-      list: ['Geko 1', 'Geko 2', 'Geko 3'],
       disabled: false,
 
       rules: {
@@ -108,7 +118,7 @@ export default {
               this.$toast.success(
                 'Prenotazione avvenuta con successo! Riceverai un email di risposta a breve'
               )
-              this.$refs.fomr.reset()
+              this.$refs.form.reset()
             } else if (res.status === 'failed') {
               console.error(res.error)
               this.$toast.error(
@@ -138,6 +148,21 @@ export default {
     onExpired() {
       console.log('Token Expired')
     },
+  },
+
+  async asyncData({ $axios }) {
+    const res = await $axios.$get('/data/disponibili.json')
+    const links = await $axios.$get('/data/amazon.json')
+
+    let list = res.map((x) => x.nome)
+
+    return { list, links }
+  },
+
+  mounted() {
+    const geco = this.$route.query?.geco
+
+    if (geco) this.prenotazione.geco = geco
   },
 
   head() {

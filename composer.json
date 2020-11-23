@@ -1,5 +1,6 @@
 {
   "name": "stivb/indiegekko",
+  "description": "",
   "type": "project",
   "require": {
     "google/recaptcha": "^1.2",

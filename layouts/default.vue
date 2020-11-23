@@ -13,6 +13,7 @@
 <style scoped>
 .bg {
   background-color: #eeeeee;
+  overflow: auto;
 }
 </style>
 

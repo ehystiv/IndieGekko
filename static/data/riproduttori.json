@@ -1,0 +1,16 @@
+[
+  {
+    "nome": "Hype",
+    "sesso": "Maschio",
+    "razza": "geco ciliatus",
+    "morph": "Crowned, 95% pinstripe, dalmatian, white fringe",
+    "immagine": "Hype.jpeg"
+  },
+  {
+    "nome": "Polynesia",
+    "sesso": "Femmina",
+    "razza": "geco ciliatus",
+    "morph": "Flame / Fire, dalmatian, white fringe",
+    "immagine": "Polynesia.jpeg"
+  }
+]
