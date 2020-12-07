@@ -19,24 +19,34 @@
           ></v-img>
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="8" xl="8">
-          <v-card rounded="lg" elevation="10">
+          <v-card rounded="lg" elevation="10" color="black">
             <v-card-title>{{ scheda.tipo }}</v-card-title>
             <v-card-text>
               <p>
-                <span class="title">Origini</span> <br />
-                <span class="body-2" v-html="scheda.origini"></span>
+                <span class="title primary--text">Origini</span> <br />
+                <span class="body-2 white--text" v-html="scheda.origini"></span>
               </p>
               <p>
-                <span class="title">Descrizione fisica</span> <br />
-                <span class="body-2" v-html="scheda.descrizione_fisica"></span>
+                <span class="title primary--text">Descrizione fisica</span>
+                <br />
+                <span
+                  class="body-2 white--text"
+                  v-html="scheda.descrizione_fisica"
+                ></span>
               </p>
               <p>
-                <span class="title">Terrario</span> <br />
-                <span class="body-2" v-html="scheda.terrario"></span>
+                <span class="title primary--text">Terrario</span> <br />
+                <span
+                  class="body-2 white--text"
+                  v-html="scheda.terrario"
+                ></span>
               </p>
               <p>
-                <span class="title">Alimentazione</span> <br />
-                <span class="body-2" v-html="scheda.alimentazione"></span>
+                <span class="title primary--text">Alimentazione</span> <br />
+                <span
+                  class="body-2 white--text"
+                  v-html="scheda.alimentazione"
+                ></span>
               </p>
             </v-card-text>
           </v-card>

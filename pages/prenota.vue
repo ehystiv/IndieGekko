@@ -8,7 +8,7 @@
         >PRENOTA UN ESEMPLARE</v-banner
       >
     </v-col>
-    <v-col cols="12" sm="12" md="10" lg="8" xl="6">
+    <v-col cols="12" sm="12" md="10" lg="8" xl="7">
       <v-card rounded="lg" elevation="12">
         <v-container>
           <v-form ref="form" @submit.prevent="onSubmit()">
@@ -71,7 +71,7 @@
         </v-card-actions>
       </v-card>
     </v-col>
-    <v-col cols="12" sm="12" md="10" lg="8" xl="6">
+    <v-col cols="12" sm="12" md="10" lg="8" xl="7">
       <v-banner
         class="negative-gradient white--text text-center"
         elevation="10"
@@ -79,7 +79,7 @@
         >CONSIGLI D'ACQUISTO</v-banner
       >
     </v-col>
-    <v-col cols="12" sm="12" md="10" lg="8" xl="6">
+    <v-col cols="12" sm="12" md="10" lg="8" xl="7">
       <ShopAmazon :links="links" />
     </v-col>
   </v-row>
