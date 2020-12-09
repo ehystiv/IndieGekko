@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "Consigli acquisti Amazon",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            "https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=indiegekko-21&m=amazon&o=29&p=8&l=as1&IS1=1&asins=B000OQW98Q&linkId=cf9bec0841241c855967ec8fc85d08a3&bc1=000000&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "default": "",
+                "description": "Link Amazon",
+                "examples": [
+                    "https://rcm-eu.amazon-adsystem.com/e/cm?ref=tf_til&t=indiegekko-21&m=amazon&o=29&p=8&l=as1&IS1=1&asins=B000OQW98Q&linkId=cf9bec0841241c855967ec8fc85d08a3&bc1=000000&lt1=_top&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"
+                ],
+                "title": "Link Amazon",
+                "type": "string"
+            }
+        ]
+    }
+}
