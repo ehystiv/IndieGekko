@@ -4,14 +4,14 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
+  globalName: 'Gekko',
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - IndieGekko',
-    title: 'Allevamento gechi',
-    description: 'Allevamento gechi',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

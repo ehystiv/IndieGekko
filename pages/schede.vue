@@ -20,7 +20,7 @@
         </v-col>
         <v-col cols="12" sm="12" md="12" lg="8" xl="8">
           <v-card rounded="lg" elevation="10" color="black">
-            <v-card-title>{{ scheda.razza }}</v-card-title>
+            <v-card-title>{{ scheda.tipo }}</v-card-title>
             <v-card-text>
               <p>
                 <span class="title primary--text">Origini</span> <br />
