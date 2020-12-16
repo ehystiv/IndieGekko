@@ -1,0 +1,114 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "Schede allevamento",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "immagine": "Hype.jpeg",
+                "razza": "Geco cyliatus",
+                "origini": "Il geco ciliatus, o geco crestato, è un piccolo sauro proveniente dalle foreste della Nuova Caledonia. La specie è stata riconosciuta, insieme al geco auricolatus e il rhacodactylus leachianus, nel 1886.  Essendo un geco crepuscolare e alboricolo, i suoi rari avvistamenti diedero origine alla dichiarazione della sua \"estinzione\" alla fine '800. Il tutto fino al 1995, dove vennero ritrovati molti più esemplari di quanti ne furono avvistati in precedenza.  Non essendo più classificata come specie \"a rischio\" , ne venne consentita la libera vendita senza il CITES.",
+                "descrizione_fisica": "Il geco crestato è considerato tra i gechi più grandi, con un raggiungimento medio di 25 cm (dalla testa alla punta della coda), per un peso compreso tra i 30 e i 40gr. Il geco crestato, o geco ciliatus, presenta sulla ai lati della testa delle piccole creste, o cilia, dalle quali la specie ha preso il nome.  Continuando dalla testa si scende lungo la schiena dove si possono ammirare i suoi bellissimi colori, ogni esemplare ha colori diversi e non c'è un limite alle combinazioni di colori possibili, quando si parla della colorazione dei gechi ma anche di altri rettili in generale, questa viene definita morph. All'estremità delle dita non posseggono unghie (come un geco leopardino o qualsiasi geco terricolo) ma delle lamelle, che, come delle microscopiche ventose, gli permettono di arrampicarsi ovunque.  Le lamelle in natura gli servono per arrampicarsi su alberi e rami, ma riusciranno ad avere un ottima aderenza anche sul vetro del vostro terrario!  Il dimorfismo sessuale è riconoscibile solo dopo 5/6 mesi di vita; per i maschi si presenterà come due grosse sacche sotto l'attaccatura della coda, mentre per le femmine ci sarà un ventre piatto con solamente una fessura, sempre situata sopra l'attaccatura della coda.  Come molti sauri può perdere la coda se si sente minacciato, ma anche in situazioni meno spaventose come il rimanere semplicemente incastrato oppure durante l'accoppiamento.  Ma attenzione! Una volta persa la coda di un ciliatus non ricrescerà più.  Ovviamente parliamo di un fattore estetico, un ciliatus senza la coda non ha nulla da invidiare a uno che la possiede.",
+                "terrario": "Il terrario di un geco ciliatus non deve essere particolarmente grande, parliamo di 30x30x40h per un singolo adulto, mentre di 40x30x50h per una coppia. Come possiamo notare, il terrario si deve sviluppare in altezza per poter permettere al  geco ciliatus, di arrampicarsi e saltare a suo piacimento.  A livello di temperature e umidità bisognerà fornirgli un clima tropicale simile a quello della Nuova Caledonia; dunque con una temperatura compresa tra i 22° e i 28°. Più precisamente in inverno gli adulti possono scendere a un massimo di 16°, ed in estate a una massima di 30°; i baby, invece, essendo più delicati, è meglio non avere temperature inferiori a 22°. L'ambiente in generale deve essere molto umido, quindi con un'umidità tra il 50% e il 70%. Per tenere sotto controllo questi parametri sarà indispensabile dotare il terrario di un termometro e di un igrometro.  In base a ciò che abbiamo appena detto possiamo definire così l'arredamento del terrario: può essere sia sterile, che naturalistico, che bioattivo. -Per sterile intendiamo: mettere nel fondo del terrario un semplice strato di carta assorbente ben umidificato.  -Per naturalistico: allestito con piante, sia vere che finte, tronchi, sassolini, terra, fibra di cocco, etc... -Per bioattivo: qualsiasi terrario con all'interno del substrato una qualsiasi squadra di pulizie (collemboli, onnischi...). Questo è a vostra discrezione, mentre assolutamente indispensabili nel terrario dovranno essere: ~Una tana alta e una bassa, ricordiamoci che sono animali crepuscolari, quindi durante il giorno dovranno avere la possibilità di nascondersi dove preferiscono.  ~Rami, tronchi, liane, bambù o qualsiasi cosa gli permetta di arrampicarsi per il terrario. ~Tappetino riscaldante nel caso la temperatura notturna scenda al di sotto delle soglie indicate in precedenza. ~Fibra di cocco, posizionata di solito sotto la tana bassa, per aiutare il nostro animale nella muta.  Altre due cose fondamentali sono: ~NON aiutare l'animale nella muta poiché il grco crestato mangia la sua stessa pelle morta e per lui è fonte di nutrimento.  ~NON utilizzare lampade in ceramica o ad UVB, poiché essendo crepuscolari la luce gli dà fastidio e non giovano dei benefici prodotti dalla luce",
+                "alimentazione": "In natura il geco ciliatus si nutre di insetti e frutta, se ne trova. Di conseguenza la loro dieta sarà composta da insetti, (come grilli, blatte, locuste, tarme della farina [...]), un po' di frutta di tanto in tanto e dosi preparati per una dieta più completa.  Per preparati intendiamo polveri, che mescolati ad acqua danno origine a una sorta di omogeneizzato con all'interno tutti i nutrienti di cui il nostro geco avrà bisogno per crescere forte; in commercio se ne trovano di diversi marchi: Repashy, Pangea e  Komodo sono i marchi più conosciuti.   L'alternanza del cibo è fondamentale; ad esempio: un giorno grilli, l'altro preparato al gusto propoli, un giorno blatte, un giorno preparato ai frutti ecc...  Ciò sarà fondamentale anche per capire i gusti del nostro geco, ovviamente come con noi, non è detto che tutto ciò che gli viene offerto gli piaccia.  Nel caso dell'alimentazione con gli insetti è consigliato una volta ogni tanto (solitamente 1/3) di cospargere l'insetto di calcio, così da renderlo ancora più nutriente.   Ora che abbiamo parlato di cosa mangiano è meglio specificare ogni quanto mangiano.  Noi consigliamo di nutrire i piccoli baby (1-4 mesi) ogni giorno, così da dargli la possibilità di crescere senza problemi (non temete, se il geco sarà pieno non mangerà, quindi non preoccupatevi!); quando invece il geco sarà un po' cresciuto (di 5-12 mesi) due giorni sì e uno no; da adulto anche un giorno sì e uno no."
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "immagine": "Hype.jpeg",
+                        "razza": "Geco cyliatus",
+                        "origini": "Il geco ciliatus, o geco crestato, è un piccolo sauro proveniente dalle foreste della Nuova Caledonia. La specie è stata riconosciuta, insieme al geco auricolatus e il rhacodactylus leachianus, nel 1886.  Essendo un geco crepuscolare e alboricolo, i suoi rari avvistamenti diedero origine alla dichiarazione della sua \"estinzione\" alla fine '800. Il tutto fino al 1995, dove vennero ritrovati molti più esemplari di quanti ne furono avvistati in precedenza.  Non essendo più classificata come specie \"a rischio\" , ne venne consentita la libera vendita senza il CITES.",
+                        "descrizione_fisica": "Il geco crestato è considerato tra i gechi più grandi, con un raggiungimento medio di 25 cm (dalla testa alla punta della coda), per un peso compreso tra i 30 e i 40gr. Il geco crestato, o geco ciliatus, presenta sulla ai lati della testa delle piccole creste, o cilia, dalle quali la specie ha preso il nome.  Continuando dalla testa si scende lungo la schiena dove si possono ammirare i suoi bellissimi colori, ogni esemplare ha colori diversi e non c'è un limite alle combinazioni di colori possibili, quando si parla della colorazione dei gechi ma anche di altri rettili in generale, questa viene definita morph. All'estremità delle dita non posseggono unghie (come un geco leopardino o qualsiasi geco terricolo) ma delle lamelle, che, come delle microscopiche ventose, gli permettono di arrampicarsi ovunque.  Le lamelle in natura gli servono per arrampicarsi su alberi e rami, ma riusciranno ad avere un ottima aderenza anche sul vetro del vostro terrario!  Il dimorfismo sessuale è riconoscibile solo dopo 5/6 mesi di vita; per i maschi si presenterà come due grosse sacche sotto l'attaccatura della coda, mentre per le femmine ci sarà un ventre piatto con solamente una fessura, sempre situata sopra l'attaccatura della coda.  Come molti sauri può perdere la coda se si sente minacciato, ma anche in situazioni meno spaventose come il rimanere semplicemente incastrato oppure durante l'accoppiamento.  Ma attenzione! Una volta persa la coda di un ciliatus non ricrescerà più.  Ovviamente parliamo di un fattore estetico, un ciliatus senza la coda non ha nulla da invidiare a uno che la possiede.",
+                        "terrario": "Il terrario di un geco ciliatus non deve essere particolarmente grande, parliamo di 30x30x40h per un singolo adulto, mentre di 40x30x50h per una coppia. Come possiamo notare, il terrario si deve sviluppare in altezza per poter permettere al  geco ciliatus, di arrampicarsi e saltare a suo piacimento.  A livello di temperature e umidità bisognerà fornirgli un clima tropicale simile a quello della Nuova Caledonia; dunque con una temperatura compresa tra i 22° e i 28°. Più precisamente in inverno gli adulti possono scendere a un massimo di 16°, ed in estate a una massima di 30°; i baby, invece, essendo più delicati, è meglio non avere temperature inferiori a 22°. L'ambiente in generale deve essere molto umido, quindi con un'umidità tra il 50% e il 70%. Per tenere sotto controllo questi parametri sarà indispensabile dotare il terrario di un termometro e di un igrometro.  In base a ciò che abbiamo appena detto possiamo definire così l'arredamento del terrario: può essere sia sterile, che naturalistico, che bioattivo. -Per sterile intendiamo: mettere nel fondo del terrario un semplice strato di carta assorbente ben umidificato.  -Per naturalistico: allestito con piante, sia vere che finte, tronchi, sassolini, terra, fibra di cocco, etc... -Per bioattivo: qualsiasi terrario con all'interno del substrato una qualsiasi squadra di pulizie (collemboli, onnischi...). Questo è a vostra discrezione, mentre assolutamente indispensabili nel terrario dovranno essere: ~Una tana alta e una bassa, ricordiamoci che sono animali crepuscolari, quindi durante il giorno dovranno avere la possibilità di nascondersi dove preferiscono.  ~Rami, tronchi, liane, bambù o qualsiasi cosa gli permetta di arrampicarsi per il terrario. ~Tappetino riscaldante nel caso la temperatura notturna scenda al di sotto delle soglie indicate in precedenza. ~Fibra di cocco, posizionata di solito sotto la tana bassa, per aiutare il nostro animale nella muta.  Altre due cose fondamentali sono: ~NON aiutare l'animale nella muta poiché il grco crestato mangia la sua stessa pelle morta e per lui è fonte di nutrimento.  ~NON utilizzare lampade in ceramica o ad UVB, poiché essendo crepuscolari la luce gli dà fastidio e non giovano dei benefici prodotti dalla luce",
+                        "alimentazione": "In natura il geco ciliatus si nutre di insetti e frutta, se ne trova. Di conseguenza la loro dieta sarà composta da insetti, (come grilli, blatte, locuste, tarme della farina [...]), un po' di frutta di tanto in tanto e dosi preparati per una dieta più completa.  Per preparati intendiamo polveri, che mescolati ad acqua danno origine a una sorta di omogeneizzato con all'interno tutti i nutrienti di cui il nostro geco avrà bisogno per crescere forte; in commercio se ne trovano di diversi marchi: Repashy, Pangea e  Komodo sono i marchi più conosciuti.   L'alternanza del cibo è fondamentale; ad esempio: un giorno grilli, l'altro preparato al gusto propoli, un giorno blatte, un giorno preparato ai frutti ecc...  Ciò sarà fondamentale anche per capire i gusti del nostro geco, ovviamente come con noi, non è detto che tutto ciò che gli viene offerto gli piaccia.  Nel caso dell'alimentazione con gli insetti è consigliato una volta ogni tanto (solitamente 1/3) di cospargere l'insetto di calcio, così da renderlo ancora più nutriente.   Ora che abbiamo parlato di cosa mangiano è meglio specificare ogni quanto mangiano.  Noi consigliamo di nutrire i piccoli baby (1-4 mesi) ogni giorno, così da dargli la possibilità di crescere senza problemi (non temete, se il geco sarà pieno non mangerà, quindi non preoccupatevi!); quando invece il geco sarà un po' cresciuto (di 5-12 mesi) due giorni sì e uno no; da adulto anche un giorno sì e uno no."
+                    }
+                ],
+                "required": [
+                    "immagine",
+                    "razza",
+                    "origini",
+                    "descrizione_fisica",
+                    "terrario",
+                    "alimentazione"
+                ],
+                "properties": {
+                    "immagine": {
+                        "$id": "#/items/anyOf/0/properties/immagine",
+                        "default": "",
+                        "description": "An explanation about the purpose of this instance.",
+                        "examples": [
+                            "Hype.jpeg"
+                        ],
+                        "title": "Foto del geco",
+                        "type": "string"
+                    },
+                    "razza": {
+                        "$id": "#/items/anyOf/0/properties/morph",
+                        "default": "",
+                        "description": "An explanation about the purpose of this instance.",
+                        "examples": [
+                            "Geco cyliatus"
+                        ],
+                        "title": "Razza",
+                        "type": "string"
+                    },
+                    "origini": {
+                        "$id": "#/items/anyOf/0/properties/origini",
+                        "type": "string",
+                        "title": "The origini schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Il geco ciliatus, o geco crestato, è un piccolo sauro proveniente dalle foreste della Nuova Caledonia. La specie è stata riconosciuta, insieme al geco auricolatus e il rhacodactylus leachianus, nel 1886.  Essendo un geco crepuscolare e alboricolo, i suoi rari avvistamenti diedero origine alla dichiarazione della sua \"estinzione\" alla fine '800. Il tutto fino al 1995, dove vennero ritrovati molti più esemplari di quanti ne furono avvistati in precedenza.  Non essendo più classificata come specie \"a rischio\" , ne venne consentita la libera vendita senza il CITES."
+                        ]
+                    },
+                    "descrizione_fisica": {
+                        "$id": "#/items/anyOf/0/properties/descrizione_fisica",
+                        "type": "string",
+                        "title": "Descrizione fisica",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Il geco crestato è considerato tra i gechi più grandi, con un raggiungimento medio di 25 cm (dalla testa alla punta della coda), per un peso compreso tra i 30 e i 40gr. Il geco crestato, o geco ciliatus, presenta sulla ai lati della testa delle piccole creste, o cilia, dalle quali la specie ha preso il nome.  Continuando dalla testa si scende lungo la schiena dove si possono ammirare i suoi bellissimi colori, ogni esemplare ha colori diversi e non c'è un limite alle combinazioni di colori possibili, quando si parla della colorazione dei gechi ma anche di altri rettili in generale, questa viene definita morph. All'estremità delle dita non posseggono unghie (come un geco leopardino o qualsiasi geco terricolo) ma delle lamelle, che, come delle microscopiche ventose, gli permettono di arrampicarsi ovunque.  Le lamelle in natura gli servono per arrampicarsi su alberi e rami, ma riusciranno ad avere un ottima aderenza anche sul vetro del vostro terrario!  Il dimorfismo sessuale è riconoscibile solo dopo 5/6 mesi di vita; per i maschi si presenterà come due grosse sacche sotto l'attaccatura della coda, mentre per le femmine ci sarà un ventre piatto con solamente una fessura, sempre situata sopra l'attaccatura della coda.  Come molti sauri può perdere la coda se si sente minacciato, ma anche in situazioni meno spaventose come il rimanere semplicemente incastrato oppure durante l'accoppiamento.  Ma attenzione! Una volta persa la coda di un ciliatus non ricrescerà più.  Ovviamente parliamo di un fattore estetico, un ciliatus senza la coda non ha nulla da invidiare a uno che la possiede."
+                        ]
+                    },
+                    "terrario": {
+                        "$id": "#/items/anyOf/0/properties/terrario",
+                        "type": "string",
+                        "title": "Terrario",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "Il terrario di un geco ciliatus non deve essere particolarmente grande, parliamo di 30x30x40h per un singolo adulto, mentre di 40x30x50h per una coppia. Come possiamo notare, il terrario si deve sviluppare in altezza per poter permettere al  geco ciliatus, di arrampicarsi e saltare a suo piacimento.  A livello di temperature e umidità bisognerà fornirgli un clima tropicale simile a quello della Nuova Caledonia; dunque con una temperatura compresa tra i 22° e i 28°. Più precisamente in inverno gli adulti possono scendere a un massimo di 16°, ed in estate a una massima di 30°; i baby, invece, essendo più delicati, è meglio non avere temperature inferiori a 22°. L'ambiente in generale deve essere molto umido, quindi con un'umidità tra il 50% e il 70%. Per tenere sotto controllo questi parametri sarà indispensabile dotare il terrario di un termometro e di un igrometro.  In base a ciò che abbiamo appena detto possiamo definire così l'arredamento del terrario: può essere sia sterile, che naturalistico, che bioattivo. -Per sterile intendiamo: mettere nel fondo del terrario un semplice strato di carta assorbente ben umidificato.  -Per naturalistico: allestito con piante, sia vere che finte, tronchi, sassolini, terra, fibra di cocco, etc... -Per bioattivo: qualsiasi terrario con all'interno del substrato una qualsiasi squadra di pulizie (collemboli, onnischi...). Questo è a vostra discrezione, mentre assolutamente indispensabili nel terrario dovranno essere: ~Una tana alta e una bassa, ricordiamoci che sono animali crepuscolari, quindi durante il giorno dovranno avere la possibilità di nascondersi dove preferiscono.  ~Rami, tronchi, liane, bambù o qualsiasi cosa gli permetta di arrampicarsi per il terrario. ~Tappetino riscaldante nel caso la temperatura notturna scenda al di sotto delle soglie indicate in precedenza. ~Fibra di cocco, posizionata di solito sotto la tana bassa, per aiutare il nostro animale nella muta.  Altre due cose fondamentali sono: ~NON aiutare l'animale nella muta poiché il grco crestato mangia la sua stessa pelle morta e per lui è fonte di nutrimento.  ~NON utilizzare lampade in ceramica o ad UVB, poiché essendo crepuscolari la luce gli dà fastidio e non giovano dei benefici prodotti dalla luce"
+                        ]
+                    },
+                    "alimentazione": {
+                        "$id": "#/items/anyOf/0/properties/alimentazione",
+                        "type": "string",
+                        "title": "Alimentazione",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "In natura il geco ciliatus si nutre di insetti e frutta, se ne trova. Di conseguenza la loro dieta sarà composta da insetti, (come grilli, blatte, locuste, tarme della farina [...]), un po' di frutta di tanto in tanto e dosi preparati per una dieta più completa.  Per preparati intendiamo polveri, che mescolati ad acqua danno origine a una sorta di omogeneizzato con all'interno tutti i nutrienti di cui il nostro geco avrà bisogno per crescere forte; in commercio se ne trovano di diversi marchi: Repashy, Pangea e  Komodo sono i marchi più conosciuti.   L'alternanza del cibo è fondamentale; ad esempio: un giorno grilli, l'altro preparato al gusto propoli, un giorno blatte, un giorno preparato ai frutti ecc...  Ciò sarà fondamentale anche per capire i gusti del nostro geco, ovviamente come con noi, non è detto che tutto ciò che gli viene offerto gli piaccia.  Nel caso dell'alimentazione con gli insetti è consigliato una volta ogni tanto (solitamente 1/3) di cospargere l'insetto di calcio, così da renderlo ancora più nutriente.   Ora che abbiamo parlato di cosa mangiano è meglio specificare ogni quanto mangiano.  Noi consigliamo di nutrire i piccoli baby (1-4 mesi) ogni giorno, così da dargli la possibilità di crescere senza problemi (non temete, se il geco sarà pieno non mangerà, quindi non preoccupatevi!); quando invece il geco sarà un po' cresciuto (di 5-12 mesi) due giorni sì e uno no; da adulto anche un giorno sì e uno no."
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}
