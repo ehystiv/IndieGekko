@@ -1221,10 +1221,10 @@
     consola "^2.11.3"
     http-proxy-middleware "^1.0.4"
 
-"@nuxtjs/recaptcha@^0.6.2":
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/recaptcha/-/recaptcha-0.6.2.tgz#c004ab919dfcf321dc52f6b92315aabe0f4108f8"
-  integrity sha512-XtezYXzOeR3lWtKMs19btT+ib4DjwpBJgx3nvi8PNoArLVOU0+q5xU7L//KcddbTpi2mjcYKYcLouNBn25/L1Q==
+"@nuxtjs/recaptcha@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/recaptcha/-/recaptcha-1.1.0.tgz#f36d6a30909495caa736c44aa551ba6dd0979a15"
+  integrity sha512-z7a0ad5x3hOEKAwsvrsz3opjldaAuH53dGVwePj/req5nFcj7Oinkrzjruu6esU1P89BN/rZNipmAoue4w2mNw==
 
 "@nuxtjs/robots@^2.4.2":
   version "2.4.2"
